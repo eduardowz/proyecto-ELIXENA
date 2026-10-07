@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda escolar | ELIXENA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+
+  <!-- AQUÍ pega el menú/header de tu index.html para que se vea igual -->
+
+  <main class="tienda">
+    <h1>Tienda escolar</h1>
+    <p class="subtitulo">Productos disponibles para los alumnos</p>
+
+    <div class="productos">
+
+      <div class="producto">
+        <img src="img\uniforme.jpg" alt="Uniforme escolar">
+        <h3>Uniforme escolar</h3>
+        <p>Playera oficial de la escuela</p>
+        <p class="precio">$250.00</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img\cuadernos.jpg" alt="Cuadernos">
+        <h3>Paquete de cuadernos</h3>
+        <p>Set de 5 cuadernos profesionales</p>
+        <p class="precio">$180.00</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/libros.jpg" alt="Libros">
+        <h3>Libro de texto</h3>
+        <p>Material de apoyo por materia</p>
+        <p class="precio">$320.00</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+
+    </div>
+
+    <p class="carrito">🛒 Carrito: <span id="contador">0</span> producto(s)</p>
+  </main>
+
+  <!-- AQUÍ pega el footer de tu index.html si quieres -->
+
+  <script>
+    let total = 0;
+    document.querySelectorAll('.btn-comprar').forEach(btn => {
+      btn.addEventListener('click', () => {
+        total++;
+        document.getElementById('contador').textContent = total;
+      });
+    });
+  </script>
+</body>
+</html>
