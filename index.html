@@ -176,9 +176,15 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="copy">© <span>Universidad Tecnológica Nexim</span> · Todos los derechos reservados</div>
-  <div class="copy">© <span>+656 123 4567</span></div>
-  <div class="social-links">
+  <div class="copy">© 2026 <span>Universidad Tecnológica Nexim</span> · Todos los derechos reservados</div>
+  <div class="copy">Contacto: <span>+656 123 4567</span></div>
+  <form class="newsletter" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!'); this.reset();">
+  <label for="newsletter-email">Suscríbete a nuestro boletín</label>
+  <div class="newsletter-row">
+    <input type="email" id="newsletter-email" placeholder="tucorreo@ejemplo.com" required>
+    <button type="submit">Suscribirme</button>
+  </div>
+  </form>
     <a href="https://www.instagram.com/" target="_blank" rel="noopener" title="Instagram">
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
