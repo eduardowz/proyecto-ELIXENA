@@ -538,9 +538,12 @@ footer .copy span { color: white; }
   transition: all 0.2s;
 }
 
-    .tarjeta {
-        padding: 24px 22px;
-    }
+.social-links a:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+  transform: translateY(-2px);
+}
 
 .newsletter { margin: 12px 0; }
 .newsletter label { display: block; font-size: 0.85rem; margin-bottom: 6px; }
